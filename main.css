@@ -11,8 +11,8 @@ body {
     align-items: center;
 
 
-    padding-top: 32px;
-    padding-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 16px;
 }
 
 .header-container .logo {
@@ -35,7 +35,7 @@ header a {
 
 header a:hover {
     text-decoration: none;
-    color: #999;
+    color: #666;
 }
 
 header .hamburger-icon {
@@ -49,6 +49,55 @@ header .hamburger-icon img {
 }
 
 /* Header css ends */
+
+
+
+
+/* Pregnant women program css starts */
+
+.pregnant-women-program {
+    background-image: url('./images/body-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.pregnant-women-program .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.pregnant-women-program h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #555;
+}
+
+.pregnant-women-program h1,
+.pregnant-women-program p {
+    margin-bottom: 0;
+}
+
+.pregnant-women-program p {
+    color: #999;
+}
+
+.pregnant-women-program button {
+    border: none;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #ebc1c8;
+    border-radius: 2px;
+}
+
+/* Pregnant women program css ends */
+
 
 
 
@@ -145,7 +194,7 @@ footer a.email {
 
 footer a:hover {
     text-decoration: none;
-    color: #ccc;
+    color: #eee;
 }
 
 .footer-container {}
@@ -183,7 +232,6 @@ footer .social-icons {
 
 footer .social-icons span {
     background-color: #eee;
-    color: #222;
     border-radius: 2px;
     width: 24px;
     height: 24px;
@@ -198,11 +246,41 @@ footer .fa-instagram,
 footer .fa-twitter {
     position: relative;
     top: 1px;
+    color: #222;
 }
 
 footer .fa-facebook {
     top: 2px;
 }
+
+footer span:hover {
+    cursor: pointer;
+}
+
+footer span.fb:hover {
+    background-color: #4267B2;
+}
+
+footer span.insta:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+footer span.tw:hover {
+    background-color: #1DA1F2;
+}
+
+footer span.fb:hover .fa-facebook {
+    color: #fff;
+}
+
+footer span.insta:hover .fa-instagram {
+    color: #fff;
+}
+
+footer span.tw:hover .fa-twitter {
+    color: #fff;
+}
+
 
 /* Footer css ends */
 
@@ -346,5 +424,13 @@ footer .fa-facebook {
 @media only screen and (max-width: 575.98px) {
     header ul {
         padding-right: 16px;
+    }
+
+    .pregnant-women-program h1 {
+        font-size: 32px;
+    }
+
+    .pregnant-women-program p {
+        max-width: 300px
     }
 }
