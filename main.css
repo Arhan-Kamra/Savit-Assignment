@@ -70,6 +70,14 @@ header .hamburger-icon img {
     background-image: url('./images/body-2-background.png');
 }
 
+.pregnant-women-program.body-4 {
+    background-image: url('./images/body-5.png');
+}
+
+.pregnant-women-program.body-5 {
+    background-image: url('./images/body-5.png');
+}
+
 .pregnant-women-program .content {
     display: flex;
     flex-direction: column;
@@ -99,6 +107,10 @@ header .hamburger-icon img {
     font-weight: 700;
     background-color: #ebc1c8;
     border-radius: 2px;
+}
+
+.pregnant-women-program button:hover {
+    background-color: #fd96a7;
 }
 
 /* Pregnant women program css ends */
@@ -439,16 +451,25 @@ footer span.tw:hover .fa-twitter {
         background-image: none;
     }
 
-    @media only screen and (max-width: 575.98px) {
-        header ul {
-            padding-right: 16px;
-        }
-
-        .pregnant-women-program h1 {
-            font-size: 32px;
-        }
-
-        .pregnant-women-program p {
-            max-width: 300px
-        }
+    .pregnant-women-program.body-4 {
+        background-image: none;
     }
+
+    .pregnant-women-program.body-5 {
+        background-image: none;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    header ul {
+        padding-right: 16px;
+    }
+
+    .pregnant-women-program h1 {
+        font-size: 32px;
+    }
+
+    .pregnant-women-program p {
+        max-width: 300px
+    }
+}
