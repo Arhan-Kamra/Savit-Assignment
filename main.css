@@ -320,6 +320,10 @@ header .hamburger-icon img {
     padding-left: 24px;
 }
 
+::placeholder {
+    color: #bbb;
+}
+
 .get-in-touch-container form textarea {
     background-color: #ebebeb;
     border: 0;
