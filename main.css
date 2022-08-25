@@ -64,17 +64,85 @@ header .hamburger-icon img {
     padding-top: 198px;
     padding-bottom: 198px;
     /* min-height: 777px; */
+
+    background-position: fixed;
 }
 
 .pregnant-women-program.body-2 {
     background-image: url('./images/body-2-background.png');
+    background-position: fixed;
 }
 
 .pregnant-women-program.body-4 {
     background-image: url('./images/body-4.png');
     background-size: 100% 100%;
-    padding-bottom: calc(198px - 40px);
+    padding-top: 120px;
+    padding-bottom: calc(120px - 40px);
 }
+
+/* video section css starts */
+.pregnant-women-program.body-4.video-section {
+    background-image: none;
+    background-color: #ebc1c8;
+}
+
+.video-section .social-icons {
+    display: flex;
+    gap: 24px;
+}
+
+.video-section .social-icons span {
+    background-color: #555;
+    border-radius: 2px;
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-section .fa-facebook,
+.video-section .fa-instagram,
+.video-section .fa-twitter {
+    position: relative;
+    top: 1px;
+    color: #fff;
+}
+
+.video-section .fa-facebook {
+    top: 2px;
+}
+
+.video-section span:hover {
+    cursor: pointer;
+}
+
+.video-section span.fb:hover {
+    background-color: #4267B2;
+}
+
+.video-section span.insta:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.video-section span.tw:hover {
+    background-color: #1DA1F2;
+}
+
+.video-section span.fb:hover .fa-facebook {
+    color: #fff;
+}
+
+.video-section span.insta:hover .fa-instagram {
+    color: #fff;
+}
+
+.video-section span.tw:hover .fa-twitter {
+    color: #fff;
+}
+
+/* video section css ends */
 
 .pregnant-women-program.body-5 {
     background-image: url('./images/body-5.png');
@@ -133,6 +201,7 @@ header .hamburger-icon img {
     font-weight: 700;
     background-color: #ebc1c8;
     border-radius: 2px;
+    color: #3d3d52;
 }
 
 .pregnant-women-program button:hover {
@@ -196,6 +265,199 @@ header .hamburger-icon img {
 }
 
 /* Programs offered css ends */
+
+
+
+
+
+/* Get in touch css starts */
+
+.get-in-touch {
+    background-image: url('./images/get-in-touch-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.get-in-touch-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.get-in-touch-container h2,
+.get-in-touch-container p {
+    text-align: center;
+}
+
+.get-in-touch-container h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #555;
+}
+
+.get-in-touch-container p {
+    max-width: 800px;
+    color: #999;
+}
+
+.get-in-touch-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.get-in-touch-container form input {
+    height: 48px;
+    background-color: #ebebeb;
+    border: 0;
+    padding-left: 24px;
+}
+
+.get-in-touch-container form textarea {
+    background-color: #ebebeb;
+    border: 0;
+    padding-left: 24px;
+    padding-top: 16px;
+}
+
+.get-in-touch-container form button {
+    border: none;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #ebc1c8;
+    border-radius: 2px;
+    align-self: center;
+    color: #3d3d52;
+}
+
+/* Get in touch css ends */
+
+
+
+
+
+/* Gallery css starts */
+
+.gallery {
+    background-image: url('./images/get-in-touch-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.gallery-container h2,
+.gallery-container p {
+    text-align: center;
+}
+
+.gallery-container h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #555;
+}
+
+.gallery-container p {
+    max-width: 800px;
+    color: #999;
+}
+
+.gallery-container .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc((100% - 90%)/2);
+    justify-content: flex-start;
+}
+
+.gallery-container .gallery-item {
+    width: 30%;
+    min-width: 280px;
+    margin-bottom: 48px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 16px;
+    box-shadow: 8px 8px 6px 0px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-container .gallery-item h3 {
+    text-align: center;
+    color: #555;
+    font-weight: 700;
+}
+
+.gallery-container .gallery-item p {
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.gallery-container .gallery .img img {
+    width: 100%;
+}
+
+.gallery-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.gallery-container form input {
+    height: 48px;
+    background-color: #ebebeb;
+    border: 0;
+    padding-left: 24px;
+}
+
+.gallery-container form textarea {
+    background-color: #ebebeb;
+    border: 0;
+    padding-left: 24px;
+    padding-top: 16px;
+}
+
+.gallery-container form button {
+    border: none;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #ebc1c8;
+    border-radius: 2px;
+    align-self: center;
+    color: #3d3d52;
+}
+
+/* Gallery css ends */
+
+
+
+
+
+
+
+
+
+
 
 
 /* Footer css starts */
@@ -448,6 +710,15 @@ footer span.tw:hover .fa-twitter {
 
 
 /* Media queries */
+@media only screen and (max-width: 1199.98px) {
+    .gallery-container .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: calc((100% - 90%)/2);
+        justify-content: center;
+    }
+}
+
 @media only screen and (max-width: 991.98px) {
     header ul {
         width: 70%;
@@ -487,6 +758,14 @@ footer span.tw:hover .fa-twitter {
     }
 
     .pregnant-women-program.body-5 {
+        background-image: none;
+    }
+
+    .get-in-touch {
+        background-image: none;
+    }
+
+    .gallery {
         background-image: none;
     }
 
